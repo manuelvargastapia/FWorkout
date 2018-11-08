@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'routes.dart';
 
 void main() => runApp(FWorkout());
 
@@ -10,12 +11,7 @@ class FWorkout extends StatelessWidget {
     return MaterialApp(
       title: _appName,
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text(_appName),
-        ),
-        body: Container(),
-      ),
+      routes: myRoutes,
     );
   }
 }
