@@ -40,6 +40,13 @@ class HomePage extends StatelessWidget {
           child: Text('Insert fancy content here'),
         ),
       ),
+      //FAB añadido
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.pushNamed(context, '/new_routine');
+        },
+        child: Icon(Icons.add),
+      ),
     );
   }
 }
